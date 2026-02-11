@@ -7,7 +7,7 @@
 
  ---
  
-**MITRE refusal to publish CVE leaves users blind... observed exploitation March 2025-Jan 2026, but hardware flaw exists since devices left factories years ago. Users left unknown and continiue to remain defenseless.**
+**MITRE refusal to publish CVE leaves users blind... observed exploitation March 2025-Jan 2026, but hardware flaw exists since devices left factories years ago. Users left unknown and continue to remain defenseless.**
 
 ---
 
