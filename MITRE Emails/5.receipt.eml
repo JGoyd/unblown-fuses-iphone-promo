@@ -1,0 +1,92 @@
+Return-Path: <prvs=35011a1ca2=cve-request@mitre.org>
+X-Original-To: fr0mthecloud@proton.me
+Delivered-To: fr0mTheCloud@proton.me
+Authentication-Results: mail.protonmail.ch; dkim=pass (Good 2048 bit
+    rsa-sha256 signature) header.d=mitre.org header.a=rsa-sha256
+Authentication-Results: mail.protonmail.ch; dmarc=pass (p=none dis=none)
+ header.from=mitre.org
+Authentication-Results: mail.protonmail.ch; spf=pass smtp.mailfrom=mitre.org
+Authentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=67.231.147.183
+Authentication-Results: mail.protonmail.ch; dkim=pass (2048-bit key) header.d=mitre.org
+ header.i=@mitre.org header.b="NFHuJ25M"
+Received: from mx0e-00007b01.gpphosted.com (mx0e-00007b01.gpphosted.com [67.231.147.183])
+ (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client
+ certificate requested) by mailinzur109.protonmail.ch (Postfix) with ESMTPS id
+ 4f9bvy2XDhz3R for <fr0mthecloud@proton.me>; Tue, 10 Feb 2026 22:34:22 +0000 (UTC)
+Received: from pps.filterd (m0326551.ppops.net [127.0.0.1]) by
+ mx0f-00007b01.gpphosted.com (8.18.1.2/8.18.1.2) with ESMTP id 61AL3xFe010559 for
+ <fr0mthecloud@proton.me>; Tue, 10 Feb 2026 22:34:14 GMT
+Received: from smtpyrhmv1.mitre.org ([192.52.194.175]) by mx0f-00007b01.gpphosted.com
+ (PPS) with ESMTPS id 4c8c8wgb96-1 (version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384
+ bits=256 verify=NOT) for <fr0mthecloud@proton.me>; Tue, 10 Feb 2026 22:34:14 +0000
+Received: from smtprhmv1.mitre.org (smtprhmv1.mitre.org [10.20.200.16]) (using TLSv1.2
+ with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client certificate
+ requested) by smtpyrhmv1.mitre.org (Postfix) with ESMTPS id 09B61413DC7 for
+ <fr0mthecloud@proton.me>; Tue, 10 Feb 2026 17:34:14 -0500 (EST)
+Received: from cvecmssrv2.mitre.org (cvecmssrv2.mitre.org [10.8.1.60]) (using TLSv1.2
+ with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client certificate
+ requested) by smtprhmv1.mitre.org (Postfix) with ESMTPS id EDE2680EADF; Tue, 10 Feb 2026
+ 17:34:13 -0500 (EST)
+Received: by cvecmssrv2.mitre.org (Postfix, from userid 6025) id C9044C3B288; Tue, 10 Feb
+ 2026 17:34:13 -0500 (EST)
+Dkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mitre.org; h=date : from : to :
+ subject : cc : message-id; s=pps1; bh=Bnod5jMs9AYalSBE357CqNXKBFw7pqlw+BRGrqKc2ag=;
+ b=NFHuJ25M6e0nOvsyOOf5NLCZus2LSEgTrATdvSk6BOUHmJyi8gaNfHaQUJNPiwDZr9Pz
+ Xz4jg/6ZONN5ZHZSq/JuBnkHcfbYvrDGwz00ItilGD0x2yXvDkWYVhe3dl8PpB6uduit
+ Ac3ui/GxGktQU1LgPDw+kncmfBy6KsdrCa0sIzAzvTfn7DGkdQds6xBgUY+UzTVosl/W
+ QGojVJFR2B6LNsKPUg49Ei19KdAlE3osQeasExyXme38piVo3FeoPCNUxao3qCynRNB9
+ DvJSc4tpr+CfHcdOj5O6JWbd1GZWPr2K3LFU3KqOxvupSwFkwS1qOU8PVrptB2Pf4fPQ 3Q==
+Date: Tue, 10 Feb 2026 17:34:13 -0500
+From: cve-request@mitre.org
+To: fr0mthecloud@proton.me
+Subject: Re: [scr1988922] Texas Instruments SN27xxx Series Battery Fuel Gauge IC - All
+ Versions
+Cc: cve-request@mitre.org
+Message-Id: <20260210223413.iVMC6%cve-request@mitre.org>
+User-Agent: s-nail v14.9.22
+X-Proofpoint-Virus-Version: vendor=nai engine=6800 definitions=11697 signatures=596818
+X-Pm-Spam: 0yezJI6cihyJeYR3pi42biOpJJvbmsCIeI1msjN3X3blJp7IjSlBITQ0iz0iOCMiwJPU
+ FQF9RUVkEUNUSUSO9owIjSCJLUIy6uETLzMsY9kIl1WJZZ91pvZmbjI7pBSIli0QTOsnih1Wa2ZfVF
+ tbm6SIZIhmzjFGd1am95laW13RXbVmk1B3XzXwIYwMj5TAMIwiipFWbFbz8JfcHkW9bZwWitJiOWYs
+ lByM3yS0LMID2wEDMiNw5IsdChm1IaxWfyB3M3XyBIib2ujAOMADwzkjMTO5kk3OT2jYNMAT1sMjNm
+ Ih1x0aW0XhZXV2tkVmYGZul9tZ1l2RbbIC6ulmIGdsZF0b2121LbRHpulGb3ZhV1lbCzS1NbFWssIC
+ bnIfBBhc36SIbM4Cw1cjMTN5QgxOTzzQNMkD3iwyMFcz9FtcGh2JXcU2iuAjODM3IU0NT4TkOMcT05
+ AzMzNsMBfInp3dcdNGovR3X3XoBNoaXnW5aIojwyAjLjMyQAwMzwTAMNIj0xYTNyMiwVucnh25XbUW
+ ihJiOGbtwVhZmyHVdZMXtfVHc3cpdNodG9n1IfwSipJ3cCZ6IY5IjiGJOMcjwhJGZmZiRE2MDljZNZ
+ Ij19JCNfQ==
+X-Pm-Origin: external
+X-Pm-Transfer-Encryption: TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)
+X-Pm-Content-Encryption: on-delivery
+X-Pm-Spamscore: 0
+X-Pm-Spam-Action: inbox
+Mime-Version: 1.0
+Content-Type: multipart/mixed;boundary=---------------------390ba3c4e0da7f4aae6b9630dccc9d2d
+
+-----------------------390ba3c4e0da7f4aae6b9630dccc9d2d
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain;charset=utf-8
+
+Hello, Mr. Goydish,
+
+   Because of concerns expressed to the MITRE TL-Root by a diverse set
+of CVE Program community members, record publication for
+CVE-2026-25251 will not move forward at this time. We will notify you
+if record publication occurs at a later date. We wish to further
+inform you that the MITRE TL-Root has proceeded to Dispute
+Reconsideration step 3b, which can be found in the
+https://www.cve.org/Resources/General/Policies/CVE-Record-Dispute-Policy.p=
+df
+document. In addition, we will point out that, within any discussion
+forums set up for the CVE Program's CNA community, it is the practice
+of the MITRE TL-Root to decline interaction with individuals who are
+not CNAs. We can accept new requests on the https://cveform.mitre.org
+website.
+
+Sincerely,
+MITRE TL-Root
+
+--
+M/S M300, 202 Burlington Road, Bedford, MA 01730 USA
+[ A PGP key is available for encrypted communications at
+  https://www.cve.org/ResourcesSupport/FAQs ]
+-----------------------390ba3c4e0da7f4aae6b9630dccc9d2d--
