@@ -38,7 +38,7 @@ unblown-fuses-iphone-promo/
 │   ├── 2. cve-reserved            # "CVE-2026-25251 issued"        
 │   ├── 3. publication request
 │   ├── 4. response                # Missing URL Provided
-│   └── 5. Refusal to publish      # "Publication paused
+│   └── 5. Refusal to publish      # Publication paused
 ├── VINCE/                         # README.md
 │   ├── vu132084-description.png   # CISA portal screenshot (OTP fuses, JTAG, 384KB AON)
 │   └── cwe1191-package/           # iPhone 14 Pro Max A16 confirmation (5 files)
