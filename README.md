@@ -64,7 +64,7 @@ unblown-fuses-iphone-promo/
 ├── LIVE-EXPLOITATION/             
 │   ├── README.md                         # Verification guide
 │   ├── Report1_Hardware_Debug_CVE-2026-25251.txt
-│   ├── Report2_CloudKit_Exfil_CVE-2026-25252.txt
+│   ├── Report2_CloudKit_Exfil_CVE-2026-25251.txt
 │   ├── logdata_LiveData.tracev3          # Raw 3.1MB binary log (SHA256 verified)
 │   ├── tracev3_exploitation_analyzer.py  # → Report 1 (0x2081 detection)
 │   └── tracev3_network_analyzer.py       # → Report 2 (CloudKit C2)
