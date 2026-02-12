@@ -31,8 +31,6 @@ python3 bgsql_ghost_wake_analyzer.py log_*.BGSQL           # → 756 GHOST WAKES
 
 ### LIVE EXPLOITATION (Feb 8, 2026 - iOS 26.2.1)
 
-**CISA KEV submitted 2026-02-11 (vulnerability@mail.cisa.dhs.gov) | BOD 22-01**
-
 iPhone 14 Pro Max (D74AP, build 23C71) LiveData.tracev3 capture during active exploitation:
 - 8x CoreSight register 0x2081 hits (OTP bits 4-6 = 0, fuses UNBLOWN)
 - Kernel debug events type 0xefd6 + KTRR/PAC bypass 0x3535
@@ -41,6 +39,7 @@ iPhone 14 Pro Max (D74AP, build 23C71) LiveData.tracev3 capture during active ex
 
 [**Full Exploitation Package**](https://github.com/Str8tdr0p/unblown-fuses-iphone-promo/tree/main/LIVE-EXPLOITATION)
 
+*CISA KEV submitted 2026-02-11 (vulnerability@mail.cisa.dhs.gov) | BOD 22-01*
 
 ### Repository Structure 
 
